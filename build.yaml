@@ -1,0 +1,13 @@
+include:
+ - board: seeeduino_xiao_ble
+   shield: uollp
+   snippet: studio-rpc-usb-uart
+   cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_KEYBOARD_NAME=\"uollp\" -DCONFIG_NFCT_PINS_AS_GPIOS=y
+ - board: seeeduino_xiao_ble
+   shield: uollp_left
+   snippet: studio-rpc-usb-uart
+   cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_KEYBOARD_NAME=\"uollp\" -DCONFIG_NFCT_PINS_AS_GPIOS=y
+ - board: seeeduino_xiao_ble
+   shield: uollp_right
+ - board: seeeduino_xiao_ble
+   shield: settings_reset
