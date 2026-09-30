@@ -1,8 +1,11 @@
 # zmk-config-uollp ZMK Config Template
 
-このリポジトリは、自作キーボード [skubmdi/uollp](https://github.com/skubmdi/uollp) 用の ZMK ファームウェアを GitHub Actions 等でビルドするための **テンプレートリポジトリ** です。
+このリポジトリは、自作キーボード [skubmdi/uollp](https://github.com/skubmdi/uollp) 用の ZMK ファームウェアを  
+GitHub Actions 等でビルドするための **テンプレートリポジトリ** です。
 
-本リポジトリにはキーボードの定義（Shield）は含まれておらず、外部の Shield リポジトリ [skubmdi/zmk-keyboard-uollp](https://github.com/skubmdi/zmk-keyboard-uollp) を `west.yml` 経由でモジュールとして読み込む構成になっています。
+> [!NOTE]
+> 本リポジトリにはキーボードの定義（Shield）は含まれておらず、  
+> 別リポジトリ [skubmdi/zmk-keyboard-uollp](https://github.com/skubmdi/zmk-keyboard-uollp) を `west.yml` 経由でモジュールとして読み込む構成になっています。
 
 ## 使い方 (Getting Started)
 
@@ -24,7 +27,7 @@
 ```dts
 / {
     chosen {
-        zmk,physical-layout = &layout20;
+        zmk,physical-layout = &layout40;
         // &layout20, &layout24, &layout30, &layout40, &layout48, &layout60;
     };
 };
@@ -36,7 +39,7 @@
 2. **[Actions]** タブを開き、実行中のワークフロー（`Build Firmware`）を選択します。
 3. ビルド完了後、画面下部の **Artifacts** セクションから `.uf2` ファイルを含む Zip をダウンロードします。
 
-> ![NOTE]
+> [!NOTE]
 > [skubmdi/zdmck](https://github.com/skubmdi/zdmck) でdevcontainerを使用したローカルビルドも可能です  
 > Github Actionsでは数分かかるビルドも数秒で完了し、軽微な修正やデバッグが容易です。
 
@@ -48,6 +51,6 @@
 2. キーボード裏側のリセットボタンを2回素早く押し、ブートローダーモード（USBドライブとして認識される状態）にします。
 3. 対応する `.uf2` ファイルを認識されたドライブにドラッグ＆ドロップして書き込みます。
 
-> ![TIP]
+> [!TIP]
 > 左右分割の場合はuollp_left/uollp_right  
 > 片手デバイスとして使用する場合はuollp を使用してください。
