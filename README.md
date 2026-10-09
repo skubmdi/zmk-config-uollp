@@ -1,7 +1,6 @@
-# zmk-config-uollp ZMK Config Template
+# zmk-config-uollp
 
-このリポジトリは、自作キーボード [skubmdi/uollp](https://github.com/skubmdi/uollp) 用の ZMK ファームウェアを  
-GitHub Actions 等でビルドするための **テンプレートリポジトリ** です。
+このリポジトリは、自作キーボード [skubmdi/uollp](https://github.com/skubmdi/uollp) 用の ZMK ファームウェアをGitHub Actions 等でビルドするためのリポジトリです。
 
 > [!NOTE]
 > 本リポジトリにはキーボードの定義（Shield）は含まれておらず、  
@@ -12,8 +11,7 @@ GitHub Actions 等でビルドするための **テンプレートリポジト�
 ### 1. リポジトリをフォーク (Fork)
 
 1. ページ右上にある **[Fork]** ボタンをクリックします。
-2. **Repository name** を `zmk-config-uollp-template` から末尾の `-template` を削除し、`zmk-config-uollp` に変更します。
-3. **[Create fork]** をクリックして自身のアカウントにリポジトリを作成します。
+2. **[Create fork]** をクリックして自身のアカウントにリポジトリを作成します。
 
 ### 2. キーマップの編集 (Keymap Customization)
 
