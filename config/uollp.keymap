@@ -4,8 +4,7 @@
 
 	chosen {
 
-		zmk,physical-layout = &layout40;
-        // &layout20, &layout24, &layout30, &layout40, &layout48, &layout60;
+		zmk,physical-layout = &layout4x5x2;
 	};
 
 	keymap {
@@ -13,11 +12,11 @@
 		compatible = "zmk,keymap";
 
 		default {
-			bindings = <
-				&none	&none	&none	&none	&none   &none	&none	&none	&none	&none
-				&none	&none	&none	&none	&none   &none	&none	&none	&none	&none
-				&none	&none	&none	&none	&none   &none	&none	&none	&none	&none
-				&none	&none	&none	&none	&none   &none	&none	&none	&none	&none
+			display-name = "default"; bindings = <
+				&none	&none	&none	&none	&none	&none	&none	&none	&none	&none
+				&none	&none	&none	&none	&none	&none	&none	&none	&none	&none
+				&none	&none	&none	&none	&none	&none	&none	&none	&none	&none
+				&none	&none	&none	&none	&none	&none	&none	&none	&none	&none
 			>;
 		};
 	};

@@ -25,11 +25,11 @@
 ```dts
 / {
     chosen {
-        zmk,physical-layout = &layout40;
-        // &layout20, &layout24, &layout30, &layout40, &layout48, &layout60;
+        zmk,physical-layout = &layout4x5x2;
     };
 };
 ```
+選択可能なレイアウトは [シールド定義](https://github.com/skubmdi/zmk-keyboard-uollp/#2-keymapファイルで任意のレイアウトを設定) を参照してください。
 
 ### 3. ファームウェアのビルドとダウンロード (Build & Download)
 
@@ -50,5 +50,5 @@
 3. 対応する `.uf2` ファイルを認識されたドライブにドラッグ＆ドロップして書き込みます。
 
 > [!TIP]
-> 左右分割の場合はuollp_left/uollp_right  
-> 片手デバイスとして使用する場合はuollp を使用してください。
+> 左右分割の場合は`uollp_left`/`uollp_right`  
+> 片手デバイスとして使用する場合は`uollp`を使用してください。
