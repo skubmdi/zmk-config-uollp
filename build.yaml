@@ -5,10 +5,11 @@ include:
    artifact-name: uollp
  - board: seeeduino_xiao_ble
    shield: uollp_left
-   artifact-name: uollp_left
    snippet: studio-rpc-usb-uart
+   artifact-name: uollp_left
  - board: seeeduino_xiao_ble
    shield: uollp_right
    artifact-name: uollp_right
  - board: seeeduino_xiao_ble
    shield: settings_reset
+   artifact-name: xiao_reset
